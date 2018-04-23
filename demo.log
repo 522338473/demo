@@ -1,0 +1,1196 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Apr 17 20:27:15 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40115 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x238d7f0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x238d7f0 pid: 57142 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 57142)
+spawned uWSGI worker 1 (pid: 57144, cores: 4)
+spawned uWSGI worker 2 (pid: 57145, cores: 4)
+spawned uWSGI worker 3 (pid: 57150, cores: 4)
+spawned uWSGI worker 4 (pid: 57153, cores: 4)
+spawned uWSGI http 1 (pid: 57160)
+[pid: 57144|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 701 bytes} [Wed Apr 18 03:27:34 2018] GET /app01/login/ => generated 11486 bytes in 205 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 57144|app: -1|req: -1/2] 127.0.0.1 () {42 vars in 700 bytes} [Wed Apr 18 03:27:34 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 97163 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 1)
+[pid: 57150|app: -1|req: -1/3] 127.0.0.1 () {42 vars in 735 bytes} [Wed Apr 18 03:27:34 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 121200 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 0)
+[pid: 57150|app: -1|req: -1/4] 127.0.0.1 () {42 vars in 716 bytes} [Wed Apr 18 03:27:34 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 37045 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/5] 127.0.0.1 () {42 vars in 694 bytes} [Wed Apr 18 03:27:34 2018] GET /static/jquery/jquery.session.js => generated 2639 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 57153|app: -1|req: -1/6] 127.0.0.1 () {42 vars in 692 bytes} [Wed Apr 18 03:27:34 2018] GET /static/jquery/jquery.cookie.js => generated 3121 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 3)
+[pid: 57153|app: -1|req: -1/7] 127.0.0.1 () {42 vars in 699 bytes} [Wed Apr 18 03:27:34 2018] GET /static/sytle/css/login.css => generated 79 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 109 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/8] 127.0.0.1 () {42 vars in 680 bytes} [Wed Apr 18 03:27:34 2018] GET /static/sytle/js/login.js => generated 1934 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/9] 127.0.0.1 () {42 vars in 723 bytes} [Wed Apr 18 03:27:37 2018] GET /static/img/Bootstrap_i1.png => generated 213428 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 57150|app: -1|req: -1/10] 127.0.0.1 () {42 vars in 723 bytes} [Wed Apr 18 03:27:37 2018] GET /static/img/Bootstrap_i2.png => generated 203309 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 57153|app: -1|req: -1/11] 127.0.0.1 () {42 vars in 723 bytes} [Wed Apr 18 03:27:37 2018] GET /static/img/Bootstrap_i3.png => generated 211663 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 57145|app: -1|req: -1/12] 127.0.0.1 () {42 vars in 723 bytes} [Wed Apr 18 03:27:37 2018] GET /static/img/Bootstrap_i4.png => generated 177353 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 57144|app: -1|req: -1/13] 127.0.0.1 () {42 vars in 885 bytes} [Wed Apr 18 03:27:37 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 2)
+此次验证码是： 8943
+8943
+[pid: 57153|app: 0|req: 1/14] 127.0.0.1 () {42 vars in 717 bytes} [Wed Apr 18 03:27:36 2018] GET /app01/get_validCode_img/ => generated 1780 bytes in 273 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 1)
+[pid: 57144|app: 0|req: 2/15] 127.0.0.1 () {42 vars in 724 bytes} [Wed Apr 18 03:27:45 2018] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 2 headers in 93 bytes (1 switches on core 2)
+[pid: 57145|app: 0|req: 1/16] 127.0.0.1 () {42 vars in 726 bytes} [Wed Apr 18 03:27:45 2018] GET /admin/ => generated 0 bytes in 218 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 2)
+[pid: 57153|app: 0|req: 2/17] 127.0.0.1 () {42 vars in 763 bytes} [Wed Apr 18 03:27:45 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 146 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 3)
+[pid: 57144|app: -1|req: -1/18] 127.0.0.1 () {42 vars in 823 bytes} [Wed Apr 18 03:27:46 2018] GET /static/admin/css/base.css => generated 15937 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 57150|app: -1|req: -1/19] 127.0.0.1 () {42 vars in 825 bytes} [Wed Apr 18 03:27:46 2018] GET /static/admin/css/login.css => generated 1203 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 3)
+[pid: 57153|app: -1|req: -1/20] 127.0.0.1 () {42 vars in 825 bytes} [Wed Apr 18 03:27:46 2018] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 2)
+[pid: 57153|app: -1|req: -1/21] 127.0.0.1 () {42 vars in 914 bytes} [Wed Apr 18 03:27:46 2018] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 80304 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 57153|app: -1|req: -1/22] 127.0.0.1 () {42 vars in 910 bytes} [Wed Apr 18 03:27:46 2018] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 81348 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 57153|app: 0|req: 3/23] 127.0.0.1 () {42 vars in 839 bytes} [Wed Apr 18 03:28:19 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 34 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 3)
+[pid: 57153|app: -1|req: -1/24] 127.0.0.1 () {42 vars in 823 bytes} [Wed Apr 18 03:28:19 2018] GET /static/admin/css/base.css => generated 15937 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 57153|app: -1|req: -1/25] 127.0.0.1 () {42 vars in 825 bytes} [Wed Apr 18 03:28:19 2018] GET /static/admin/css/login.css => generated 1203 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 57144|app: -1|req: -1/26] 127.0.0.1 () {42 vars in 825 bytes} [Wed Apr 18 03:28:19 2018] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 1)
+[pid: 57144|app: -1|req: -1/27] 127.0.0.1 () {42 vars in 914 bytes} [Wed Apr 18 03:28:19 2018] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 80304 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 57150|app: -1|req: -1/28] 127.0.0.1 () {42 vars in 910 bytes} [Wed Apr 18 03:28:19 2018] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 81348 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 57145|app: 0|req: 2/29] 127.0.0.1 () {42 vars in 802 bytes} [Wed Apr 18 04:36:36 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 202 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 57153|app: -1|req: -1/30] 127.0.0.1 () {42 vars in 786 bytes} [Wed Apr 18 04:36:37 2018] GET /static/admin/css/base.css => generated 15937 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 57144|app: -1|req: -1/31] 127.0.0.1 () {42 vars in 788 bytes} [Wed Apr 18 04:36:37 2018] GET /static/admin/css/login.css => generated 1203 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 57145|app: -1|req: -1/32] 127.0.0.1 () {42 vars in 788 bytes} [Wed Apr 18 04:36:38 2018] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 0)
+[pid: 57145|app: -1|req: -1/33] 127.0.0.1 () {42 vars in 877 bytes} [Wed Apr 18 04:36:38 2018] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 80304 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 57153|app: -1|req: -1/34] 127.0.0.1 () {42 vars in 873 bytes} [Wed Apr 18 04:36:38 2018] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 81348 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 57153|app: 0|req: 4/35] 192.168.37.129 () {40 vars in 678 bytes} [Wed Apr 18 04:37:42 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 73 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 3)
+[pid: 57153|app: -1|req: -1/36] 192.168.37.129 () {42 vars in 756 bytes} [Wed Apr 18 04:37:43 2018] GET /static/admin/css/base.css => generated 15937 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/37] 192.168.37.129 () {42 vars in 758 bytes} [Wed Apr 18 04:37:43 2018] GET /static/admin/css/login.css => generated 1203 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/38] 192.168.37.129 () {42 vars in 758 bytes} [Wed Apr 18 04:37:43 2018] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/39] 192.168.37.129 () {42 vars in 847 bytes} [Wed Apr 18 04:37:44 2018] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 80304 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/40] 192.168.37.129 () {42 vars in 843 bytes} [Wed Apr 18 04:37:44 2018] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 81348 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+Not Found: /favicon.ico
+[pid: 57153|app: 0|req: 5/41] 192.168.37.129 () {36 vars in 652 bytes} [Wed Apr 18 04:37:45 2018] GET /favicon.ico => generated 2046 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 57150|app: 0|req: 1/42] 192.168.37.129 () {36 vars in 593 bytes} [Wed Apr 18 04:37:45 2018] GET /favicon.ico => generated 2046 bytes in 499 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /
+[pid: 57145|app: 0|req: 3/43] 192.168.37.1 () {36 vars in 652 bytes} [Wed Apr 18 04:38:30 2018] GET / => generated 2013 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 3)
+Not Found: /favicon.ico
+[pid: 57150|app: 0|req: 2/44] 192.168.37.1 () {36 vars in 636 bytes} [Wed Apr 18 04:38:30 2018] GET /favicon.ico => generated 2046 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 57150|app: 0|req: 3/45] 192.168.37.1 () {36 vars in 674 bytes} [Wed Apr 18 04:38:41 2018] GET /app01/login => generated 0 bytes in 9 msecs (HTTP/1.1 301) 2 headers in 99 bytes (1 switches on core 3)
+[pid: 57153|app: 0|req: 6/46] 192.168.37.1 () {36 vars in 676 bytes} [Wed Apr 18 04:38:41 2018] GET /app01/login/ => generated 11486 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+[pid: 57153|app: -1|req: -1/47] 192.168.37.1 () {36 vars in 658 bytes} [Wed Apr 18 04:38:41 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 97163 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 57144|app: -1|req: -1/48] 192.168.37.1 () {36 vars in 693 bytes} [Wed Apr 18 04:38:41 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 121200 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 0)
+[pid: 57150|app: -1|req: -1/49] 192.168.37.1 () {36 vars in 674 bytes} [Wed Apr 18 04:38:41 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 37045 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 57145|app: -1|req: -1/50] 192.168.37.1 () {36 vars in 652 bytes} [Wed Apr 18 04:38:41 2018] GET /static/jquery/jquery.session.js => generated 2639 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 57145|app: -1|req: -1/51] 192.168.37.1 () {36 vars in 650 bytes} [Wed Apr 18 04:38:41 2018] GET /static/jquery/jquery.cookie.js => generated 3121 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 57145|app: -1|req: -1/52] 192.168.37.1 () {36 vars in 657 bytes} [Wed Apr 18 04:38:41 2018] GET /static/sytle/css/login.css => generated 79 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 109 bytes (0 switches on core 2)
+[pid: 57145|app: -1|req: -1/53] 192.168.37.1 () {36 vars in 638 bytes} [Wed Apr 18 04:38:41 2018] GET /static/sytle/js/login.js => generated 1934 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+此次验证码是： 5627
+5627
+[pid: 57153|app: -1|req: -1/54] 192.168.37.1 () {38 vars in 730 bytes} [Wed Apr 18 04:38:41 2018] GET /static/img/Bootstrap_i1.png => generated 213428 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/55] 192.168.37.1 () {38 vars in 730 bytes} [Wed Apr 18 04:38:41 2018] GET /static/img/Bootstrap_i2.png => generated 203309 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 1)
+[pid: 57153|app: -1|req: -1/56] 192.168.37.1 () {38 vars in 730 bytes} [Wed Apr 18 04:38:41 2018] GET /static/img/Bootstrap_i3.png => generated 211663 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 1)
+[pid: 57150|app: -1|req: -1/57] 192.168.37.1 () {38 vars in 730 bytes} [Wed Apr 18 04:38:41 2018] GET /static/img/Bootstrap_i4.png => generated 177353 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 2)
+[pid: 57144|app: -1|req: -1/58] 192.168.37.1 () {40 vars in 839 bytes} [Wed Apr 18 04:38:41 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 57153|app: 0|req: 7/59] 192.168.37.1 () {36 vars in 674 bytes} [Wed Apr 18 04:38:41 2018] GET /app01/get_validCode_img/ => generated 1539 bytes in 79 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+[pid: 57145|app: 0|req: 4/60] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 04:44:01 2018] GET /app01/login/ => generated 11486 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+此次验证码是： 3432
+3432
+[pid: 57153|app: 0|req: 8/61] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 04:44:01 2018] GET /app01/get_validCode_img/ => generated 1552 bytes in 128 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+[pid: 57153|app: 0|req: 9/62] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 06:06:36 2018] GET /app01/login/ => generated 11486 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+[pid: 57150|app: -1|req: -1/63] 192.168.37.1 () {40 vars in 770 bytes} [Wed Apr 18 06:06:36 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 57144|app: -1|req: -1/64] 192.168.37.1 () {40 vars in 786 bytes} [Wed Apr 18 06:06:36 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 57150|app: -1|req: -1/65] 192.168.37.1 () {40 vars in 805 bytes} [Wed Apr 18 06:06:36 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 57150|app: -1|req: -1/66] 192.168.37.1 () {40 vars in 762 bytes} [Wed Apr 18 06:06:36 2018] GET /static/jquery/jquery.cookie.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 57144|app: -1|req: -1/67] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 06:06:36 2018] GET /static/jquery/jquery.session.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 57144|app: -1|req: -1/68] 192.168.37.1 () {40 vars in 769 bytes} [Wed Apr 18 06:06:36 2018] GET /static/sytle/css/login.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 57144|app: -1|req: -1/69] 192.168.37.1 () {40 vars in 750 bytes} [Wed Apr 18 06:06:36 2018] GET /static/sytle/js/login.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 57150|app: -1|req: -1/70] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 06:06:36 2018] GET /static/img/Bootstrap_i1.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 57150|app: -1|req: -1/71] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 06:06:36 2018] GET /static/img/Bootstrap_i2.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 57150|app: -1|req: -1/72] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 06:06:36 2018] GET /static/img/Bootstrap_i3.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 57150|app: -1|req: -1/73] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 06:06:36 2018] GET /static/img/Bootstrap_i4.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 57150|app: -1|req: -1/74] 192.168.37.1 () {42 vars in 938 bytes} [Wed Apr 18 06:06:36 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+此次验证码是： 4095
+4095
+[pid: 57144|app: 0|req: 3/75] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 06:06:36 2018] GET /app01/get_validCode_img/ => generated 1709 bytes in 137 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 57144|app: 0|req: 4/76] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 06:12:27 2018] GET /app01/login/ => generated 11486 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+此次验证码是： 3665
+3665
+[pid: 57153|app: 0|req: 10/77] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 06:12:27 2018] GET /app01/get_validCode_img/ => generated 1644 bytes in 141 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+Wed Apr 18 06:35:09 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Apr 18 06:35:09 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Apr 17 23:40:17 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39317 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x221c800
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x221c800 pid: 59826 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 59826)
+spawned uWSGI worker 1 (pid: 59828, cores: 4)
+spawned uWSGI worker 2 (pid: 59829, cores: 4)
+spawned uWSGI worker 3 (pid: 59830, cores: 4)
+spawned uWSGI worker 4 (pid: 59837, cores: 4)
+spawned uWSGI http 1 (pid: 59841)
+[pid: 59830|app: 0|req: 1/1] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 06:40:22 2018] GET /app01/login/ => generated 11486 bytes in 171 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 59829|app: -1|req: -1/2] 192.168.37.1 () {40 vars in 770 bytes} [Wed Apr 18 06:40:22 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 59829|app: -1|req: -1/3] 192.168.37.1 () {40 vars in 805 bytes} [Wed Apr 18 06:40:22 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 59829|app: -1|req: -1/4] 192.168.37.1 () {40 vars in 769 bytes} [Wed Apr 18 06:40:22 2018] GET /static/sytle/css/login.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 59829|app: -1|req: -1/5] 192.168.37.1 () {40 vars in 786 bytes} [Wed Apr 18 06:40:22 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 59829|app: -1|req: -1/6] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 06:40:22 2018] GET /static/jquery/jquery.session.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 59829|app: -1|req: -1/7] 192.168.37.1 () {40 vars in 762 bytes} [Wed Apr 18 06:40:22 2018] GET /static/jquery/jquery.cookie.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 59829|app: -1|req: -1/8] 192.168.37.1 () {40 vars in 750 bytes} [Wed Apr 18 06:40:22 2018] GET /static/sytle/js/login.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 59830|app: -1|req: -1/9] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 06:40:22 2018] GET /static/img/Bootstrap_i1.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 59830|app: -1|req: -1/10] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 06:40:22 2018] GET /static/img/Bootstrap_i2.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 59830|app: -1|req: -1/11] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 06:40:22 2018] GET /static/img/Bootstrap_i3.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 59830|app: -1|req: -1/12] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 06:40:22 2018] GET /static/img/Bootstrap_i4.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 59830|app: -1|req: -1/13] 192.168.37.1 () {42 vars in 936 bytes} [Wed Apr 18 06:40:22 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+此次验证码是： 4905
+4905
+[pid: 59829|app: 0|req: 1/14] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 06:40:22 2018] GET /app01/get_validCode_img/ => generated 1684 bytes in 189 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+Not Found: /
+[pid: 59830|app: 0|req: 2/15] 192.168.37.1 () {40 vars in 776 bytes} [Wed Apr 18 06:40:47 2018] GET / => generated 2013 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 2)
+[pid: 59829|app: 0|req: 2/16] 192.168.37.1 () {38 vars in 733 bytes} [Wed Apr 18 06:46:36 2018] GET /app01/login/ => generated 11486 bytes in 31 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 2)
+此次验证码是： 0752
+0752
+[pid: 59829|app: 0|req: 3/17] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 06:46:36 2018] GET /app01/get_validCode_img/ => generated 1440 bytes in 67 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+[pid: 59828|app: 0|req: 1/18] 192.168.37.1 () {38 vars in 733 bytes} [Wed Apr 18 06:49:41 2018] GET /app01/login/ => generated 11486 bytes in 121 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+此次验证码是： 3689
+3689
+[pid: 59828|app: 0|req: 2/19] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 06:49:41 2018] GET /app01/get_validCode_img/ => generated 1879 bytes in 183 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+[pid: 59828|app: 0|req: 3/20] 192.168.37.1 () {40 vars in 801 bytes} [Wed Apr 18 06:49:57 2018] GET /app01/login/ => generated 11486 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 2)
+此次验证码是： 3629
+3629
+[pid: 59828|app: 0|req: 4/21] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 06:49:57 2018] GET /app01/get_validCode_img/ => generated 1638 bytes in 98 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 1)
+[pid: 59830|app: 0|req: 3/22] 192.168.37.1 () {40 vars in 801 bytes} [Wed Apr 18 06:49:59 2018] GET /app01/login/ => generated 11486 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+此次验证码是： 0923
+0923
+[pid: 59837|app: 0|req: 1/23] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 06:49:59 2018] GET /app01/get_validCode_img/ => generated 1539 bytes in 156 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+[pid: 59837|app: 0|req: 2/24] 192.168.37.1 () {40 vars in 801 bytes} [Wed Apr 18 06:50:34 2018] GET /app01/login/ => generated 11486 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+此次验证码是： 6050
+6050
+[pid: 59837|app: 0|req: 3/25] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 06:50:34 2018] GET /app01/get_validCode_img/ => generated 1560 bytes in 162 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 1)
+[pid: 59837|app: 0|req: 4/26] 192.168.37.1 () {40 vars in 801 bytes} [Wed Apr 18 06:50:37 2018] GET /app01/login/ => generated 11486 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 2)
+此次验证码是： 9571
+9571
+[pid: 59829|app: 0|req: 4/27] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 06:50:37 2018] GET /app01/get_validCode_img/ => generated 1362 bytes in 128 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 1)
+Not Found: /
+[pid: 59829|app: 0|req: 5/28] 192.168.37.1 () {38 vars in 745 bytes} [Wed Apr 18 06:51:29 2018] GET / => generated 2013 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 2)
+Not Found: /
+[pid: 59837|app: 0|req: 5/29] 192.168.37.1 () {40 vars in 740 bytes} [Wed Apr 18 06:58:26 2018] GET / => generated 2013 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /
+[pid: 59837|app: 0|req: 6/30] 192.168.37.1 () {40 vars in 740 bytes} [Wed Apr 18 07:04:55 2018] GET / => generated 2013 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 3)
+Not Found: /
+[pid: 59828|app: 0|req: 5/31] 192.168.37.1 () {40 vars in 740 bytes} [Wed Apr 18 07:04:57 2018] GET / => generated 2013 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /
+[pid: 59828|app: 0|req: 6/32] 192.168.37.1 () {42 vars in 787 bytes} [Wed Apr 18 07:05:06 2018] GET / => generated 2013 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 3)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 59841)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 00:09:52 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:38209 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1322800
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1322800 pid: 60469 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 60469)
+spawned uWSGI worker 1 (pid: 60471, cores: 4)
+spawned uWSGI worker 2 (pid: 60475, cores: 4)
+spawned uWSGI worker 3 (pid: 60476, cores: 4)
+spawned uWSGI worker 4 (pid: 60481, cores: 4)
+spawned uWSGI http 1 (pid: 60484)
+Not Found: /
+[pid: 60475|app: 0|req: 1/1] 192.168.37.1 () {42 vars in 787 bytes} [Wed Apr 18 07:09:56 2018] GET / => generated 2013 bytes in 84 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /
+[pid: 60471|app: 0|req: 1/2] 192.168.37.1 () {42 vars in 787 bytes} [Wed Apr 18 07:13:16 2018] GET / => generated 2013 bytes in 95 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /
+[pid: 60471|app: 0|req: 2/3] 192.168.37.1 () {42 vars in 787 bytes} [Wed Apr 18 07:13:18 2018] GET / => generated 2013 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 2)
+[pid: 60481|app: 0|req: 1/4] 192.168.37.1 () {38 vars in 733 bytes} [Wed Apr 18 07:25:55 2018] GET /app01/login/ => generated 11486 bytes in 125 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 60471|app: -1|req: -1/5] 192.168.37.1 () {40 vars in 770 bytes} [Wed Apr 18 07:25:56 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 60476|app: -1|req: -1/6] 192.168.37.1 () {40 vars in 805 bytes} [Wed Apr 18 07:25:56 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 60476|app: -1|req: -1/7] 192.168.37.1 () {40 vars in 786 bytes} [Wed Apr 18 07:25:56 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 60481|app: -1|req: -1/8] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 07:25:56 2018] GET /static/jquery/jquery.session.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 1)
+[pid: 60481|app: -1|req: -1/9] 192.168.37.1 () {40 vars in 769 bytes} [Wed Apr 18 07:25:56 2018] GET /static/sytle/css/login.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 60481|app: -1|req: -1/10] 192.168.37.1 () {40 vars in 762 bytes} [Wed Apr 18 07:25:56 2018] GET /static/jquery/jquery.cookie.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 60481|app: -1|req: -1/11] 192.168.37.1 () {40 vars in 750 bytes} [Wed Apr 18 07:25:56 2018] GET /static/sytle/js/login.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+此次验证码是： 2915
+[pid: 60475|app: -1|req: -1/12] 192.168.37.1 () {40 vars in 830 bytes} [Wed Apr 18 07:25:56 2018] GET /static/img/Bootstrap_i1.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 1)
+[pid: 60481|app: -1|req: -1/13] 192.168.37.1 () {40 vars in 830 bytes} [Wed Apr 18 07:25:56 2018] GET /static/img/Bootstrap_i2.png => generated 0 bytes in 6 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 60471|app: -1|req: -1/14] 192.168.37.1 () {40 vars in 830 bytes} [Wed Apr 18 07:25:56 2018] GET /static/img/Bootstrap_i3.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 60471|app: -1|req: -1/15] 192.168.37.1 () {42 vars in 939 bytes} [Wed Apr 18 07:25:56 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 60471|app: -1|req: -1/16] 192.168.37.1 () {40 vars in 830 bytes} [Wed Apr 18 07:25:56 2018] GET /static/img/Bootstrap_i4.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+2915
+[pid: 60481|app: 0|req: 2/17] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 07:25:56 2018] GET /app01/get_validCode_img/ => generated 1548 bytes in 66 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 1)
+[pid: 60471|app: 0|req: 3/18] 192.168.37.1 () {38 vars in 770 bytes} [Wed Apr 18 07:27:46 2018] GET /app01/login/ => generated 11486 bytes in 18 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+此次验证码是： 3471
+3471
+[pid: 60481|app: 0|req: 3/19] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 07:27:46 2018] GET /app01/get_validCode_img/ => generated 1409 bytes in 109 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+[pid: 60471|app: 0|req: 4/20] 192.168.37.1 () {40 vars in 801 bytes} [Wed Apr 18 07:28:51 2018] GET /app01/login/ => generated 11486 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+此次验证码是： 8550
+8550
+[pid: 60476|app: 0|req: 1/21] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 07:28:51 2018] GET /app01/get_validCode_img/ => generated 1854 bytes in 131 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 60476|app: 0|req: 2/22] 192.168.37.1 () {40 vars in 801 bytes} [Wed Apr 18 07:28:52 2018] GET /app01/login/ => generated 11486 bytes in 22 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+此次验证码是： 3629
+3629
+[pid: 60475|app: 0|req: 2/23] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 07:28:52 2018] GET /app01/get_validCode_img/ => generated 1705 bytes in 195 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 60481|app: 0|req: 4/24] 192.168.37.1 () {40 vars in 801 bytes} [Wed Apr 18 07:28:57 2018] GET /app01/login/ => generated 11486 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+此次验证码是： 0090
+0090
+[pid: 60471|app: 0|req: 5/25] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 07:28:57 2018] GET /app01/get_validCode_img/ => generated 1517 bytes in 168 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+[pid: 60481|app: 0|req: 5/26] 192.168.37.1 () {40 vars in 801 bytes} [Wed Apr 18 07:29:22 2018] GET /app01/login/ => generated 11486 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+此次验证码是： 7480
+7480
+[pid: 60475|app: 0|req: 3/27] 192.168.37.1 () {38 vars in 768 bytes} [Wed Apr 18 07:29:22 2018] GET /app01/get_validCode_img/ => generated 1618 bytes in 126 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+[pid: 60481|app: 0|req: 6/28] 192.168.37.1 () {38 vars in 733 bytes} [Wed Apr 18 07:37:39 2018] GET /app01/login/ => generated 11486 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+此次验证码是： 3720
+3720
+[pid: 60476|app: 0|req: 3/29] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 07:37:39 2018] GET /app01/get_validCode_img/ => generated 1441 bytes in 93 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+[pid: 60481|app: 0|req: 7/30] 192.168.37.1 () {40 vars in 802 bytes} [Wed Apr 18 07:38:53 2018] GET /app01/login/ => generated 11486 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 2)
+此次验证码是： 4906
+4906
+[pid: 60481|app: 0|req: 8/31] 192.168.37.1 () {38 vars in 769 bytes} [Wed Apr 18 07:38:53 2018] GET /app01/get_validCode_img/ => generated 1680 bytes in 117 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+Not Found: /
+[pid: 60481|app: 0|req: 9/32] 192.168.37.1 () {38 vars in 709 bytes} [Wed Apr 18 07:42:40 2018] GET / => generated 2013 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 60484)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 00:43:39 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.37.129:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:33441 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x167e810
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x167e810 pid: 61107 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61107)
+spawned uWSGI worker 1 (pid: 61109, cores: 4)
+spawned uWSGI worker 2 (pid: 61110, cores: 4)
+spawned uWSGI worker 3 (pid: 61116, cores: 4)
+spawned uWSGI worker 4 (pid: 61118, cores: 4)
+spawned uWSGI http 1 (pid: 61122)
+Not Found: /
+[pid: 61110|app: 0|req: 1/1] 192.168.37.1 () {40 vars in 740 bytes} [Wed Apr 18 07:44:17 2018] GET / => generated 2013 bytes in 88 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 61110|app: 0|req: 2/2] 192.168.37.1 () {38 vars in 733 bytes} [Wed Apr 18 07:44:53 2018] GET /app01/login/ => generated 11486 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+此次验证码是： 1452
+1452
+[pid: 61109|app: 0|req: 1/3] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 07:44:53 2018] GET /app01/get_validCode_img/ => generated 1471 bytes in 185 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+[pid: 61118|app: 0|req: 1/4] 192.168.37.1 () {40 vars in 802 bytes} [Wed Apr 18 07:46:13 2018] GET /app01/login/ => generated 11486 bytes in 101 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+此次验证码是： 8646
+8646
+[pid: 61118|app: 0|req: 2/5] 192.168.37.1 () {38 vars in 769 bytes} [Wed Apr 18 07:46:13 2018] GET /app01/get_validCode_img/ => generated 1836 bytes in 100 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 61110|app: 0|req: 3/6] 192.168.37.1 () {38 vars in 732 bytes} [Wed Apr 18 07:58:29 2018] GET /app01/login/ => generated 11486 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 2)
+[pid: 61109|app: -1|req: -1/7] 192.168.37.1 () {40 vars in 769 bytes} [Wed Apr 18 07:58:29 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 61109|app: -1|req: -1/8] 192.168.37.1 () {40 vars in 804 bytes} [Wed Apr 18 07:58:29 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 61118|app: -1|req: -1/9] 192.168.37.1 () {40 vars in 785 bytes} [Wed Apr 18 07:58:29 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 1)
+[pid: 61118|app: -1|req: -1/10] 192.168.37.1 () {40 vars in 763 bytes} [Wed Apr 18 07:58:29 2018] GET /static/jquery/jquery.session.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 61118|app: -1|req: -1/11] 192.168.37.1 () {40 vars in 761 bytes} [Wed Apr 18 07:58:29 2018] GET /static/jquery/jquery.cookie.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+[pid: 61116|app: -1|req: -1/12] 192.168.37.1 () {40 vars in 768 bytes} [Wed Apr 18 07:58:29 2018] GET /static/sytle/css/login.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 61109|app: -1|req: -1/13] 192.168.37.1 () {40 vars in 749 bytes} [Wed Apr 18 07:58:29 2018] GET /static/sytle/js/login.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 3)
+此次验证码是： 7461
+7461
+[pid: 61116|app: -1|req: -1/14] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 07:58:29 2018] GET /static/img/Bootstrap_i2.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 61116|app: -1|req: -1/15] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 07:58:29 2018] GET /static/img/Bootstrap_i3.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 61116|app: -1|req: -1/16] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 07:58:29 2018] GET /static/img/Bootstrap_i4.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 61118|app: -1|req: -1/17] 192.168.37.1 () {40 vars in 829 bytes} [Wed Apr 18 07:58:29 2018] GET /static/img/Bootstrap_i1.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 61110|app: -1|req: -1/18] 192.168.37.1 () {42 vars in 938 bytes} [Wed Apr 18 07:58:29 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 2)
+[pid: 61118|app: 0|req: 3/19] 192.168.37.1 () {38 vars in 730 bytes} [Wed Apr 18 07:58:29 2018] GET /app01/get_validCode_img/ => generated 1336 bytes in 142 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 61122)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 01:28:37 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.37.129:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40713 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xcac7f0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xcac7f0 pid: 62680 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 62680)
+spawned uWSGI worker 1 (pid: 62682, cores: 4)
+spawned uWSGI worker 2 (pid: 62683, cores: 4)
+spawned uWSGI worker 3 (pid: 62687, cores: 4)
+spawned uWSGI worker 4 (pid: 62693, cores: 4)
+spawned uWSGI http 1 (pid: 62698)
+[pid: 62682|app: 0|req: 1/1] 192.168.37.129 () {42 vars in 729 bytes} [Wed Apr 18 08:28:48 2018] GET /admin => generated 0 bytes in 226 msecs (HTTP/1.1 301) 2 headers in 93 bytes (1 switches on core 0)
+[pid: 62683|app: 0|req: 1/2] 192.168.37.129 () {42 vars in 731 bytes} [Wed Apr 18 08:28:48 2018] GET /admin/ => generated 0 bytes in 169 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+[pid: 62693|app: 0|req: 1/3] 192.168.37.129 () {42 vars in 768 bytes} [Wed Apr 18 08:28:48 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 241 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 62687|app: -1|req: -1/4] 192.168.37.129 () {42 vars in 757 bytes} [Wed Apr 18 08:28:49 2018] GET /static/admin/css/base.css => generated 15937 bytes in 19 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/5] 192.168.37.129 () {42 vars in 759 bytes} [Wed Apr 18 08:28:49 2018] GET /static/admin/css/login.css => generated 1203 bytes in 29 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/6] 192.168.37.129 () {42 vars in 759 bytes} [Wed Apr 18 08:28:49 2018] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 3)
+[pid: 62687|app: -1|req: -1/7] 192.168.37.129 () {42 vars in 848 bytes} [Wed Apr 18 08:28:49 2018] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 80304 bytes in 11 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 62693|app: -1|req: -1/8] 192.168.37.129 () {42 vars in 844 bytes} [Wed Apr 18 08:28:49 2018] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 81348 bytes in 26 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 62687|app: 0|req: 1/9] 192.168.37.129 () {42 vars in 768 bytes} [Wed Apr 18 08:29:43 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 178 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 62682|app: -1|req: -1/10] 192.168.37.129 () {42 vars in 757 bytes} [Wed Apr 18 08:29:43 2018] GET /static/admin/css/base.css => generated 15937 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 1)
+[pid: 62693|app: -1|req: -1/11] 192.168.37.129 () {42 vars in 759 bytes} [Wed Apr 18 08:29:43 2018] GET /static/admin/css/login.css => generated 1203 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/12] 192.168.37.129 () {42 vars in 759 bytes} [Wed Apr 18 08:29:43 2018] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/13] 192.168.37.129 () {42 vars in 848 bytes} [Wed Apr 18 08:29:44 2018] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 80304 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 3)
+[pid: 62683|app: -1|req: -1/14] 192.168.37.129 () {42 vars in 844 bytes} [Wed Apr 18 08:29:44 2018] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 81348 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 62693|app: 0|req: 2/15] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 08:30:06 2018] GET /app01/login/ => generated 11486 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+[pid: 62687|app: -1|req: -1/16] 192.168.37.1 () {40 vars in 770 bytes} [Wed Apr 18 08:30:06 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/17] 192.168.37.1 () {40 vars in 805 bytes} [Wed Apr 18 08:30:06 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/18] 192.168.37.1 () {40 vars in 786 bytes} [Wed Apr 18 08:30:06 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/19] 192.168.37.1 () {40 vars in 764 bytes} [Wed Apr 18 08:30:06 2018] GET /static/jquery/jquery.session.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/20] 192.168.37.1 () {40 vars in 762 bytes} [Wed Apr 18 08:30:06 2018] GET /static/jquery/jquery.cookie.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/21] 192.168.37.1 () {40 vars in 769 bytes} [Wed Apr 18 08:30:06 2018] GET /static/sytle/css/login.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/22] 192.168.37.1 () {40 vars in 750 bytes} [Wed Apr 18 08:30:06 2018] GET /static/sytle/js/login.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/23] 192.168.37.1 () {40 vars in 830 bytes} [Wed Apr 18 08:30:07 2018] GET /static/img/Bootstrap_i1.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 1)
+[pid: 62693|app: -1|req: -1/24] 192.168.37.1 () {40 vars in 830 bytes} [Wed Apr 18 08:30:07 2018] GET /static/img/Bootstrap_i2.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 1)
+[pid: 62687|app: -1|req: -1/25] 192.168.37.1 () {40 vars in 830 bytes} [Wed Apr 18 08:30:07 2018] GET /static/img/Bootstrap_i3.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+此次验证码是： 1531
+[pid: 62687|app: -1|req: -1/26] 192.168.37.1 () {40 vars in 830 bytes} [Wed Apr 18 08:30:07 2018] GET /static/img/Bootstrap_i4.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/27] 192.168.37.1 () {42 vars in 939 bytes} [Wed Apr 18 08:30:07 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 1)
+1531
+[pid: 62693|app: 0|req: 3/28] 192.168.37.1 () {38 vars in 731 bytes} [Wed Apr 18 08:30:06 2018] GET /app01/get_validCode_img/ => generated 1350 bytes in 129 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+[pid: 62682|app: 0|req: 2/29] 192.168.37.1 () {42 vars in 811 bytes} [Wed Apr 18 08:35:40 2018] GET /app01/login/ => generated 11486 bytes in 18 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 62683|app: -1|req: -1/30] 192.168.37.1 () {42 vars in 828 bytes} [Wed Apr 18 08:35:40 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 121200 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 3)
+[pid: 62693|app: -1|req: -1/31] 192.168.37.1 () {42 vars in 787 bytes} [Wed Apr 18 08:35:40 2018] GET /static/jquery/jquery.session.js => generated 2639 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 3)
+[pid: 62682|app: -1|req: -1/32] 192.168.37.1 () {42 vars in 793 bytes} [Wed Apr 18 08:35:40 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 97163 bytes in 17 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 1)
+[pid: 62693|app: -1|req: -1/33] 192.168.37.1 () {42 vars in 785 bytes} [Wed Apr 18 08:35:40 2018] GET /static/jquery/jquery.cookie.js => generated 3121 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 3)
+[pid: 62693|app: -1|req: -1/34] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 08:35:40 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 37045 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 62693|app: -1|req: -1/35] 192.168.37.1 () {42 vars in 792 bytes} [Wed Apr 18 08:35:40 2018] GET /static/sytle/css/login.css => generated 79 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 109 bytes (0 switches on core 1)
+[pid: 62683|app: -1|req: -1/36] 192.168.37.1 () {42 vars in 773 bytes} [Wed Apr 18 08:35:41 2018] GET /static/sytle/js/login.js => generated 1934 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 3)
+[pid: 62687|app: -1|req: -1/37] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:35:41 2018] GET /static/img/Bootstrap_i1.png => generated 213428 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 2)
+[pid: 62693|app: -1|req: -1/38] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:35:41 2018] GET /static/img/Bootstrap_i3.png => generated 211663 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 62682|app: -1|req: -1/39] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:35:41 2018] GET /static/img/Bootstrap_i4.png => generated 177353 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/40] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:35:41 2018] GET /static/img/Bootstrap_i2.png => generated 203309 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 2)
+此次验证码是： 2505
+2505
+[pid: 62687|app: -1|req: -1/41] 192.168.37.1 () {44 vars in 962 bytes} [Wed Apr 18 08:35:41 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 2)
+[pid: 62683|app: 0|req: 2/42] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 08:35:41 2018] GET /app01/get_validCode_img/ => generated 1603 bytes in 174 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 62687|app: -1|req: -1/43] 192.168.37.1 () {36 vars in 763 bytes} [Wed Apr 18 08:35:41 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css.map => generated 542194 bytes in 25 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 2)
+[pid: 62693|app: 0|req: 4/44] 192.168.37.1 () {42 vars in 849 bytes} [Wed Apr 18 08:36:49 2018] GET /app01/login/ => generated 11486 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+[pid: 62682|app: -1|req: -1/45] 192.168.37.1 () {42 vars in 831 bytes} [Wed Apr 18 08:36:49 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 97163 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 62682|app: -1|req: -1/46] 192.168.37.1 () {42 vars in 866 bytes} [Wed Apr 18 08:36:49 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 121200 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 2)
+[pid: 62693|app: -1|req: -1/47] 192.168.37.1 () {42 vars in 847 bytes} [Wed Apr 18 08:36:49 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 37045 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 62682|app: -1|req: -1/48] 192.168.37.1 () {42 vars in 825 bytes} [Wed Apr 18 08:36:49 2018] GET /static/jquery/jquery.session.js => generated 2639 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 62693|app: -1|req: -1/49] 192.168.37.1 () {42 vars in 823 bytes} [Wed Apr 18 08:36:49 2018] GET /static/jquery/jquery.cookie.js => generated 3121 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 62683|app: -1|req: -1/50] 192.168.37.1 () {42 vars in 830 bytes} [Wed Apr 18 08:36:49 2018] GET /static/sytle/css/login.css => generated 79 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 109 bytes (0 switches on core 0)
+[pid: 62682|app: -1|req: -1/51] 192.168.37.1 () {42 vars in 811 bytes} [Wed Apr 18 08:36:49 2018] GET /static/sytle/js/login.js => generated 1934 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+此次验证码是： 4992
+4992
+[pid: 62683|app: -1|req: -1/52] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:36:49 2018] GET /static/img/Bootstrap_i1.png => generated 213428 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 62683|app: -1|req: -1/53] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:36:49 2018] GET /static/img/Bootstrap_i2.png => generated 203309 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 62683|app: -1|req: -1/54] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:36:49 2018] GET /static/img/Bootstrap_i3.png => generated 211663 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 62683|app: -1|req: -1/55] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:36:49 2018] GET /static/img/Bootstrap_i4.png => generated 177353 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 62683|app: -1|req: -1/56] 192.168.37.1 () {44 vars in 962 bytes} [Wed Apr 18 08:36:49 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 3)
+[pid: 62683|app: -1|req: -1/57] 192.168.37.1 () {36 vars in 763 bytes} [Wed Apr 18 08:36:49 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css.map => generated 542194 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 1)
+[pid: 62682|app: 0|req: 3/58] 192.168.37.1 () {42 vars in 847 bytes} [Wed Apr 18 08:36:49 2018] GET /app01/get_validCode_img/ => generated 1686 bytes in 171 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 62683|app: 0|req: 3/59] 192.168.37.129 () {42 vars in 768 bytes} [Wed Apr 18 08:40:47 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 93 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 62682|app: -1|req: -1/60] 192.168.37.129 () {42 vars in 757 bytes} [Wed Apr 18 08:40:47 2018] GET /static/admin/css/base.css => generated 15937 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/61] 192.168.37.129 () {42 vars in 759 bytes} [Wed Apr 18 08:40:47 2018] GET /static/admin/css/login.css => generated 1203 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 2)
+[pid: 62693|app: -1|req: -1/62] 192.168.37.129 () {42 vars in 759 bytes} [Wed Apr 18 08:40:48 2018] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/63] 192.168.37.129 () {42 vars in 848 bytes} [Wed Apr 18 08:40:48 2018] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 80304 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/64] 192.168.37.129 () {42 vars in 844 bytes} [Wed Apr 18 08:40:48 2018] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 81348 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 62687|app: 0|req: 2/65] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 08:43:48 2018] GET /app01/login => generated 0 bytes in 3 msecs (HTTP/1.1 301) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 62693|app: 0|req: 5/66] 192.168.37.1 () {42 vars in 811 bytes} [Wed Apr 18 08:43:48 2018] GET /app01/login/ => generated 11486 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 2)
+[pid: 62687|app: -1|req: -1/67] 192.168.37.1 () {42 vars in 793 bytes} [Wed Apr 18 08:43:48 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 97163 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/68] 192.168.37.1 () {42 vars in 828 bytes} [Wed Apr 18 08:43:48 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 121200 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/69] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 08:43:48 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 37045 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 62683|app: -1|req: -1/70] 192.168.37.1 () {42 vars in 785 bytes} [Wed Apr 18 08:43:48 2018] GET /static/jquery/jquery.session.js => generated 2639 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 62683|app: -1|req: -1/71] 192.168.37.1 () {42 vars in 790 bytes} [Wed Apr 18 08:43:48 2018] GET /static/sytle/css/login.css => generated 79 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 109 bytes (0 switches on core 2)
+[pid: 62682|app: -1|req: -1/72] 192.168.37.1 () {42 vars in 783 bytes} [Wed Apr 18 08:43:48 2018] GET /static/jquery/jquery.cookie.js => generated 3121 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 62687|app: -1|req: -1/73] 192.168.37.1 () {42 vars in 771 bytes} [Wed Apr 18 08:43:48 2018] GET /static/sytle/js/login.js => generated 1934 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+此次验证码是： 6813
+[pid: 62683|app: -1|req: -1/74] 192.168.37.1 () {42 vars in 852 bytes} [Wed Apr 18 08:43:48 2018] GET /static/img/Bootstrap_i1.png => generated 213428 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 2)
+[pid: 62683|app: -1|req: -1/75] 192.168.37.1 () {42 vars in 852 bytes} [Wed Apr 18 08:43:48 2018] GET /static/img/Bootstrap_i2.png => generated 203309 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 2)
+[pid: 62683|app: -1|req: -1/76] 192.168.37.1 () {42 vars in 852 bytes} [Wed Apr 18 08:43:48 2018] GET /static/img/Bootstrap_i3.png => generated 211663 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 2)
+[pid: 62683|app: -1|req: -1/77] 192.168.37.1 () {42 vars in 852 bytes} [Wed Apr 18 08:43:48 2018] GET /static/img/Bootstrap_i4.png => generated 177353 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 2)
+6813
+[pid: 62693|app: -1|req: -1/78] 192.168.37.1 () {44 vars in 961 bytes} [Wed Apr 18 08:43:48 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/79] 192.168.37.1 () {36 vars in 762 bytes} [Wed Apr 18 08:43:48 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css.map => generated 542194 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 62687|app: 0|req: 3/80] 192.168.37.1 () {42 vars in 808 bytes} [Wed Apr 18 08:43:48 2018] GET /app01/get_validCode_img/ => generated 1547 bytes in 142 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 62693|app: 0|req: 6/81] 192.168.37.1 () {42 vars in 811 bytes} [Wed Apr 18 08:56:00 2018] GET /app01/login/ => generated 11486 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 2)
+[pid: 62682|app: -1|req: -1/82] 192.168.37.1 () {42 vars in 793 bytes} [Wed Apr 18 08:56:00 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 97163 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 1)
+[pid: 62682|app: -1|req: -1/83] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 08:56:00 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 37045 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 1)
+[pid: 62693|app: -1|req: -1/84] 192.168.37.1 () {42 vars in 787 bytes} [Wed Apr 18 08:56:00 2018] GET /static/jquery/jquery.session.js => generated 2639 bytes in 10 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 3)
+[pid: 62693|app: -1|req: -1/85] 192.168.37.1 () {42 vars in 785 bytes} [Wed Apr 18 08:56:00 2018] GET /static/jquery/jquery.cookie.js => generated 3121 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 1)
+[pid: 62682|app: -1|req: -1/86] 192.168.37.1 () {42 vars in 828 bytes} [Wed Apr 18 08:56:00 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 121200 bytes in 31 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/87] 192.168.37.1 () {42 vars in 792 bytes} [Wed Apr 18 08:56:00 2018] GET /static/sytle/css/login.css => generated 79 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 109 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/88] 192.168.37.1 () {42 vars in 773 bytes} [Wed Apr 18 08:56:00 2018] GET /static/sytle/js/login.js => generated 1934 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+此次验证码是： 2132
+2132
+[pid: 62683|app: -1|req: -1/89] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:56:00 2018] GET /static/img/Bootstrap_i1.png => generated 213428 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 62683|app: -1|req: -1/90] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:56:00 2018] GET /static/img/Bootstrap_i2.png => generated 203309 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 62683|app: -1|req: -1/91] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:56:00 2018] GET /static/img/Bootstrap_i3.png => generated 211663 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 62693|app: -1|req: -1/92] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:56:00 2018] GET /static/img/Bootstrap_i4.png => generated 177353 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 62693|app: -1|req: -1/93] 192.168.37.1 () {44 vars in 962 bytes} [Wed Apr 18 08:56:00 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 3)
+[pid: 62683|app: 0|req: 4/94] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 08:56:00 2018] GET /app01/get_validCode_img/ => generated 1446 bytes in 69 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 62693|app: -1|req: -1/95] 192.168.37.1 () {36 vars in 763 bytes} [Wed Apr 18 08:56:00 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css.map => generated 542194 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 3)
+[pid: 62693|app: 0|req: 7/96] 192.168.37.1 () {42 vars in 849 bytes} [Wed Apr 18 08:57:49 2018] GET /app01/login/ => generated 11486 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+[pid: 62687|app: -1|req: -1/97] 192.168.37.1 () {42 vars in 831 bytes} [Wed Apr 18 08:57:49 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 97163 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/98] 192.168.37.1 () {42 vars in 866 bytes} [Wed Apr 18 08:57:49 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 121200 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/99] 192.168.37.1 () {42 vars in 847 bytes} [Wed Apr 18 08:57:49 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 37045 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/100] 192.168.37.1 () {42 vars in 825 bytes} [Wed Apr 18 08:57:49 2018] GET /static/jquery/jquery.session.js => generated 2639 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/101] 192.168.37.1 () {42 vars in 823 bytes} [Wed Apr 18 08:57:49 2018] GET /static/jquery/jquery.cookie.js => generated 3121 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/102] 192.168.37.1 () {42 vars in 830 bytes} [Wed Apr 18 08:57:49 2018] GET /static/sytle/css/login.css => generated 79 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 109 bytes (0 switches on core 2)
+[pid: 62687|app: -1|req: -1/103] 192.168.37.1 () {42 vars in 811 bytes} [Wed Apr 18 08:57:49 2018] GET /static/sytle/js/login.js => generated 1934 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+此次验证码是： 6001
+[pid: 62687|app: -1|req: -1/104] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:57:49 2018] GET /static/img/Bootstrap_i1.png => generated 213428 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/105] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:57:49 2018] GET /static/img/Bootstrap_i2.png => generated 203309 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 62687|app: -1|req: -1/106] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:57:49 2018] GET /static/img/Bootstrap_i3.png => generated 211663 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 62683|app: -1|req: -1/107] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 08:57:49 2018] GET /static/img/Bootstrap_i4.png => generated 177353 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+6001
+[pid: 62693|app: -1|req: -1/108] 192.168.37.1 () {44 vars in 962 bytes} [Wed Apr 18 08:57:49 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 1)
+[pid: 62687|app: 0|req: 4/109] 192.168.37.1 () {42 vars in 847 bytes} [Wed Apr 18 08:57:49 2018] GET /app01/get_validCode_img/ => generated 1444 bytes in 110 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 62693|app: -1|req: -1/110] 192.168.37.1 () {36 vars in 763 bytes} [Wed Apr 18 08:57:49 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css.map => generated 542194 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 1)
+Not Found: /
+[pid: 62687|app: 0|req: 5/111] 192.168.37.1 () {42 vars in 825 bytes} [Wed Apr 18 08:57:56 2018] GET / => generated 2013 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 62698)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 02:05:29 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.37.129:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43687 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x15587f0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x15587f0 pid: 63665 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 63665)
+spawned uWSGI worker 1 (pid: 63669, cores: 4)
+spawned uWSGI worker 2 (pid: 63673, cores: 4)
+spawned uWSGI worker 3 (pid: 63675, cores: 4)
+spawned uWSGI worker 4 (pid: 63677, cores: 4)
+spawned uWSGI http 1 (pid: 63682)
+[pid: 63669|app: 0|req: 1/1] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 09:06:05 2018] GET /app01/login => generated 0 bytes in 84 msecs (HTTP/1.1 301) 2 headers in 99 bytes (1 switches on core 0)
+[pid: 63669|app: 0|req: 2/2] 192.168.37.1 () {42 vars in 811 bytes} [Wed Apr 18 09:06:05 2018] GET /app01/login/ => generated 11486 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+[pid: 63675|app: -1|req: -1/3] 192.168.37.1 () {42 vars in 793 bytes} [Wed Apr 18 09:06:05 2018] GET /static/jquery/jquery-1.12.4.min.js => generated 97163 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 0)
+[pid: 63675|app: -1|req: -1/4] 192.168.37.1 () {42 vars in 828 bytes} [Wed Apr 18 09:06:05 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css => generated 121200 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 0)
+[pid: 63675|app: -1|req: -1/5] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 09:06:05 2018] GET /static/bootstrap-3.3.7/js/bootstrap.min.js => generated 37045 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 3 headers in 126 bytes (0 switches on core 0)
+[pid: 63669|app: -1|req: -1/6] 192.168.37.1 () {42 vars in 787 bytes} [Wed Apr 18 09:06:05 2018] GET /static/jquery/jquery.session.js => generated 2639 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 63669|app: -1|req: -1/7] 192.168.37.1 () {42 vars in 792 bytes} [Wed Apr 18 09:06:05 2018] GET /static/sytle/css/login.css => generated 79 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 109 bytes (0 switches on core 3)
+[pid: 63669|app: -1|req: -1/8] 192.168.37.1 () {42 vars in 785 bytes} [Wed Apr 18 09:06:05 2018] GET /static/jquery/jquery.cookie.js => generated 3121 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 2)
+[pid: 63669|app: -1|req: -1/9] 192.168.37.1 () {42 vars in 773 bytes} [Wed Apr 18 09:06:05 2018] GET /static/sytle/js/login.js => generated 1934 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 3)
+[pid: 63675|app: -1|req: -1/10] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 09:06:05 2018] GET /static/img/Bootstrap_i1.png => generated 213428 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 63675|app: -1|req: -1/11] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 09:06:05 2018] GET /static/img/Bootstrap_i2.png => generated 203309 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 63675|app: -1|req: -1/12] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 09:06:05 2018] GET /static/img/Bootstrap_i3.png => generated 211663 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+[pid: 63675|app: -1|req: -1/13] 192.168.37.1 () {42 vars in 853 bytes} [Wed Apr 18 09:06:05 2018] GET /static/img/Bootstrap_i4.png => generated 177353 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 3)
+此次验证码是： 7907
+7907
+[pid: 63675|app: -1|req: -1/14] 192.168.37.1 () {44 vars in 962 bytes} [Wed Apr 18 09:06:05 2018] GET /static/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 3)
+[pid: 63669|app: 0|req: 3/15] 192.168.37.1 () {42 vars in 809 bytes} [Wed Apr 18 09:06:05 2018] GET /app01/get_validCode_img/ => generated 1356 bytes in 178 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+[pid: 63673|app: -1|req: -1/16] 192.168.37.1 () {36 vars in 763 bytes} [Wed Apr 18 09:06:05 2018] GET /static/bootstrap-3.3.7/css/bootstrap.min.css.map => generated 542194 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 63682)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 02:07:48 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.37.129:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x191a700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x191a700 pid: 63700 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 63700)
+spawned uWSGI worker 1 (pid: 63702, cores: 4)
+spawned uWSGI worker 2 (pid: 63706, cores: 4)
+spawned uWSGI worker 3 (pid: 63710, cores: 4)
+spawned uWSGI worker 4 (pid: 63712, cores: 4)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Not Found: /
+[pid: 63712|app: 0|req: 1/1] 192.168.37.1 () {46 vars in 856 bytes} [Wed Apr 18 09:08:02 2018] GET / => generated 2008 bytes in 82 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 63712|app: 0|req: 2/2] 192.168.37.1 () {46 vars in 835 bytes} [Wed Apr 18 09:08:03 2018] GET /favicon.ico => generated 2041 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 63710|app: 0|req: 1/3] 192.168.37.1 () {46 vars in 840 bytes} [Wed Apr 18 09:08:25 2018] GET /app01/login => generated 0 bytes in 85 msecs (HTTP/1.1 301) 2 headers in 99 bytes (1 switches on core 1)
+[pid: 63712|app: 0|req: 3/4] 192.168.37.1 () {46 vars in 842 bytes} [Wed Apr 18 09:08:25 2018] GET /app01/login/ => generated 11486 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+此次验证码是： 1016
+1016
+[pid: 63710|app: 0|req: 2/5] 192.168.37.1 () {46 vars in 835 bytes} [Wed Apr 18 09:08:25 2018] GET /app01/get_validCode_img/ => generated 1336 bytes in 121 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+[pid: 63712|app: 0|req: 4/6] 192.168.37.1 () {46 vars in 880 bytes} [Wed Apr 18 09:09:36 2018] GET /app01/login/ => generated 11486 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+此次验证码是： 7323
+7323
+[pid: 63710|app: 0|req: 3/7] 192.168.37.1 () {46 vars in 873 bytes} [Wed Apr 18 09:09:37 2018] GET /app01/get_validCode_img/ => generated 1459 bytes in 93 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 2)
+[pid: 63706|app: 0|req: 1/8] 192.168.37.1 () {46 vars in 880 bytes} [Wed Apr 18 09:09:52 2018] GET /app01/login/ => generated 11486 bytes in 93 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+此次验证码是： 8139
+8139
+[pid: 63702|app: 0|req: 1/9] 192.168.37.1 () {46 vars in 873 bytes} [Wed Apr 18 09:09:52 2018] GET /app01/get_validCode_img/ => generated 1669 bytes in 354 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 1)
+Not Found: /
+[pid: 63706|app: 0|req: 2/10] 192.168.37.1 () {42 vars in 778 bytes} [Wed Apr 18 09:09:55 2018] GET / => generated 2008 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 2)
+Not Found: /
+[pid: 63706|app: 0|req: 3/11] 192.168.37.1 () {46 vars in 856 bytes} [Wed Apr 18 09:09:58 2018] GET / => generated 2008 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 3)
+[pid: 63710|app: 0|req: 4/12] 192.168.37.1 () {46 vars in 878 bytes} [Wed Apr 18 09:11:26 2018] GET /app01/login => generated 0 bytes in 1 msecs (HTTP/1.1 301) 2 headers in 99 bytes (1 switches on core 1)
+[pid: 63710|app: 0|req: 5/13] 192.168.37.1 () {46 vars in 880 bytes} [Wed Apr 18 09:11:26 2018] GET /app01/login/ => generated 11486 bytes in 20 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+此次验证码是： 8145
+8145
+[pid: 63710|app: 0|req: 6/14] 192.168.37.1 () {46 vars in 873 bytes} [Wed Apr 18 09:11:26 2018] GET /app01/get_validCode_img/ => generated 1734 bytes in 103 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+Not Found: /
+[pid: 63710|app: 0|req: 7/15] 192.168.37.129 () {46 vars in 750 bytes} [Wed Apr 18 09:21:58 2018] GET / => generated 2008 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 2)
+[pid: 63702|app: 0|req: 2/16] 192.168.37.1 () {46 vars in 842 bytes} [Wed Apr 18 10:07:37 2018] GET /app01/login/ => generated 11486 bytes in 33 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 2)
+此次验证码是： 9369
+9369
+[pid: 63702|app: 0|req: 3/17] 192.168.37.1 () {46 vars in 835 bytes} [Wed Apr 18 10:07:38 2018] GET /app01/get_validCode_img/ => generated 1810 bytes in 159 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+Not Found: /
+[pid: 63706|app: 0|req: 4/18] 192.168.37.129 () {42 vars in 697 bytes} [Wed Apr 18 13:45:45 2018] GET / => generated 2008 bytes in 238 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 63706|app: 0|req: 5/19] 192.168.37.129 () {40 vars in 684 bytes} [Wed Apr 18 13:45:45 2018] GET /favicon.ico => generated 2041 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 2)
+Not Found: /favicon.ico
+[pid: 63712|app: 0|req: 5/20] 192.168.37.129 () {40 vars in 624 bytes} [Wed Apr 18 13:45:45 2018] GET /favicon.ico => generated 2041 bytes in 64 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 63712|app: 0|req: 6/21] 192.168.37.129 () {42 vars in 719 bytes} [Wed Apr 18 13:45:56 2018] GET /app01/login => generated 0 bytes in 10 msecs (HTTP/1.1 301) 2 headers in 99 bytes (1 switches on core 3)
+[pid: 63706|app: 0|req: 6/22] 192.168.37.129 () {42 vars in 721 bytes} [Wed Apr 18 13:45:56 2018] GET /app01/login/ => generated 11486 bytes in 37 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+此次验证码是： 4054
+4054
+[pid: 63702|app: 0|req: 4/23] 192.168.37.129 () {42 vars in 700 bytes} [Wed Apr 18 13:45:57 2018] GET /app01/get_validCode_img/ => generated 1523 bytes in 367 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 0)
+[pid: 63702|app: 0|req: 5/24] 192.168.37.129 () {46 vars in 856 bytes} [Wed Apr 18 13:46:37 2018] GET /app01/login/ => generated 11486 bytes in 33 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+此次验证码是： 6166
+6166
+[pid: 63710|app: 0|req: 8/25] 192.168.37.129 () {46 vars in 835 bytes} [Wed Apr 18 13:46:38 2018] GET /app01/get_validCode_img/ => generated 1483 bytes in 178 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+Gracefully killing worker 2 (pid: 63706)...
+Gracefully killing worker 1 (pid: 63702)...
+Gracefully killing worker 4 (pid: 63712)...
+Gracefully killing worker 3 (pid: 63710)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/zhang/data/my_web_project/demo
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (192.168.37.129:8080)
+running /home/zhang/data/my_web_project/env/bin/uwsgi
+[uWSGI] getting INI configuration from demo.ini
+[uwsgi-static] added mapping for /static => /home/zhang/data/my_web_project/demo/allstatic
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 14:01:49 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 192.168.37.129:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x136db10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x136db10 pid: 63700 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 63700)
+spawned uWSGI worker 1 (pid: 87025, cores: 4)
+spawned uWSGI worker 2 (pid: 87029, cores: 4)
+spawned uWSGI worker 3 (pid: 87030, cores: 4)
+spawned uWSGI worker 4 (pid: 87034, cores: 4)
+Not Found: /
+[pid: 87029|app: 0|req: 1/1] 192.168.37.129 () {42 vars in 741 bytes} [Thu Apr 19 00:49:00 2018] GET / => generated 2008 bytes in 1321 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 87025|app: 0|req: 1/2] 192.168.37.129 () {40 vars in 728 bytes} [Thu Apr 19 00:49:02 2018] GET /favicon.ico => generated 2041 bytes in 125 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /
+[pid: 87034|app: 0|req: 1/3] 192.168.37.129 () {42 vars in 741 bytes} [Thu Apr 19 00:49:21 2018] GET / => generated 2008 bytes in 98 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87025|app: 0|req: 2/4] 192.168.37.129 () {42 vars in 751 bytes} [Thu Apr 19 00:49:27 2018] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 2 headers in 93 bytes (1 switches on core 3)
+[pid: 87034|app: 0|req: 2/5] 192.168.37.129 () {42 vars in 753 bytes} [Thu Apr 19 00:49:27 2018] GET /admin/ => generated 0 bytes in 202 msecs (HTTP/1.1 302) 7 headers in 363 bytes (1 switches on core 2)
+[pid: 87034|app: 0|req: 3/6] 192.168.37.129 () {42 vars in 746 bytes} [Thu Apr 19 00:49:27 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 476 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 3)
+[pid: 87025|app: 0|req: 3/7] 192.168.37.129 () {48 vars in 926 bytes} [Thu Apr 19 00:54:32 2018] POST /admin/login/?next=/admin/ => generated 0 bytes in 204 msecs (HTTP/1.1 302) 9 headers in 558 bytes (1 switches on core 1)
+[pid: 87025|app: 0|req: 4/8] 192.168.37.129 () {44 vars in 816 bytes} [Thu Apr 19 00:54:33 2018] GET /admin/ => generated 2734 bytes in 133 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+Not Found: /
+[pid: 87025|app: 0|req: 5/9] 192.168.37.129 () {44 vars in 785 bytes} [Thu Apr 19 00:54:40 2018] GET / => generated 2008 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 3)
+[pid: 87025|app: 0|req: 6/10] 192.168.37.129 () {44 vars in 816 bytes} [Thu Apr 19 00:54:44 2018] GET /admin/ => generated 2734 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 2)
+[pid: 87025|app: 0|req: 7/11] 192.168.37.129 () {44 vars in 829 bytes} [Thu Apr 19 00:54:49 2018] GET /admin/password_change/ => generated 2512 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 256 bytes (1 switches on core 1)
+[pid: 87034|app: 0|req: 4/12] 192.168.37.129 () {44 vars in 813 bytes} [Thu Apr 19 00:55:01 2018] GET /admin/ => generated 2734 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 1)
+[pid: 87034|app: 0|req: 5/13] 192.168.37.129 () {44 vars in 817 bytes} [Thu Apr 19 00:55:03 2018] GET /admin/auth/user/ => generated 6375 bytes in 168 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 2)
+[pid: 87034|app: 0|req: 6/14] 192.168.37.129 () {42 vars in 726 bytes} [Thu Apr 19 00:55:04 2018] GET /admin/jsi18n/ => generated 7682 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 3)
+[pid: 87034|app: 0|req: 7/15] 192.168.37.129 () {44 vars in 813 bytes} [Thu Apr 19 00:55:09 2018] GET /admin/ => generated 2734 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 87029|app: 0|req: 2/16] 192.168.37.129 () {44 vars in 819 bytes} [Thu Apr 19 00:55:41 2018] GET /admin/auth/group/ => generated 3353 bytes in 97 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 87029|app: 0|req: 3/17] 192.168.37.129 () {42 vars in 727 bytes} [Thu Apr 19 00:55:41 2018] GET /admin/jsi18n/ => generated 7682 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 3)
+[pid: 87029|app: 0|req: 4/18] 192.168.37.129 () {44 vars in 813 bytes} [Thu Apr 19 00:56:06 2018] GET /admin/ => generated 2734 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 87029|app: 0|req: 5/19] 192.168.37.129 () {42 vars in 753 bytes} [Thu Apr 19 00:56:18 2018] GET /admin/ => generated 2734 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 2)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 87025)...
+Gracefully killing worker 2 (pid: 87029)...
+worker 3 buried after 20 seconds
+worker 4 buried after 30 seconds
+worker 1 buried after 33 seconds
+worker 2 buried after 32 seconds
+binary reloading uWSGI...
+chdir() to /home/zhang/data/my_web_project/demo
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (192.168.37.129:8080)
+running /home/zhang/data/my_web_project/env/bin/uwsgi
+[uWSGI] getting INI configuration from demo.ini
+[uwsgi-static] added mapping for /static => /home/zhang/data/my_web_project/demo/allstatic
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Apr 19 01:54:23 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 192.168.37.129:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x258db10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x258db10 pid: 63700 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 63700)
+spawned uWSGI worker 1 (pid: 92313, cores: 4)
+spawned uWSGI worker 2 (pid: 92314, cores: 4)
+spawned uWSGI worker 3 (pid: 92318, cores: 4)
+spawned uWSGI worker 4 (pid: 92325, cores: 4)
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 18:59:15 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.13.0-38-generic #43~16.04.1-Ubuntu SMP Wed Mar 14 17:48:43 UTC 2018
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.37.129:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x127e150
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x127e150 pid: 2682 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2682)
+spawned uWSGI worker 1 (pid: 2684, cores: 4)
+spawned uWSGI worker 2 (pid: 2685, cores: 4)
+spawned uWSGI worker 3 (pid: 2689, cores: 4)
+spawned uWSGI worker 4 (pid: 2693, cores: 4)
+Not Found: /
+[pid: 2684|app: 0|req: 1/1] 192.168.37.129 () {42 vars in 741 bytes} [Thu Apr 19 01:59:20 2018] GET / => generated 2008 bytes in 612 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 2685|app: 0|req: 1/2] 192.168.37.129 () {42 vars in 753 bytes} [Thu Apr 19 02:00:21 2018] GET /admin/ => generated 2734 bytes in 656 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 19:00:54 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.13.0-38-generic #43~16.04.1-Ubuntu SMP Wed Mar 14 17:48:43 UTC 2018
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.37.129:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2099150
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2099150 pid: 2907 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2907)
+spawned uWSGI worker 1 (pid: 2909, cores: 4)
+spawned uWSGI worker 2 (pid: 2910, cores: 4)
+spawned uWSGI worker 3 (pid: 2911, cores: 4)
+spawned uWSGI worker 4 (pid: 2918, cores: 4)
+[pid: 2910|app: 0|req: 1/1] 192.168.37.129 () {42 vars in 753 bytes} [Thu Apr 19 02:00:59 2018] GET /admin/ => generated 2734 bytes in 519 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.17 (64bit) on [Wed Apr 18 19:03:18 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.13.0-38-generic #43~16.04.1-Ubuntu SMP Wed Mar 14 17:48:43 UTC 2018
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (192.168.37.129:8080).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 2911|app: 0|req: 1/2] 192.168.37.129 () {42 vars in 753 bytes} [Thu Apr 19 02:03:46 2018] GET /admin/ => generated 2734 bytes in 196 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 2911|app: 0|req: 2/3] 192.168.37.129 () {42 vars in 753 bytes} [Thu Apr 19 02:03:49 2018] GET /admin/ => generated 2734 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 2910|app: 0|req: 2/4] 192.168.37.1 () {42 vars in 764 bytes} [Thu Apr 19 02:04:59 2018] GET /app01/login/ => generated 11486 bytes in 23 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+此次验证码是： 3068
+3068
+[pid: 2918|app: 0|req: 1/5] 192.168.37.1 () {42 vars in 757 bytes} [Thu Apr 19 02:05:00 2018] GET /app01/get_validCode_img/ => generated 1805 bytes in 689 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 2909|app: 0|req: 1/6] 192.168.37.1 () {42 vars in 768 bytes} [Thu Apr 19 02:05:02 2018] GET /favicon.ico => generated 2041 bytes in 92 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 2909|app: 0|req: 2/7] 192.168.37.129 () {42 vars in 753 bytes} [Thu Apr 19 03:06:50 2018] GET /admin/ => generated 2734 bytes in 240 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 2909|app: 0|req: 3/8] 192.168.37.129 () {44 vars in 673 bytes} [Thu Apr 19 03:07:35 2018] GET /admin/ => generated 0 bytes in 52 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 3)
+[pid: 2909|app: 0|req: 4/9] 192.168.37.129 () {44 vars in 710 bytes} [Thu Apr 19 03:07:35 2018] GET /admin/login/?next=/admin/ => generated 1651 bytes in 49 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 2)
+Gracefully killing worker 2 (pid: 2910)...
+...gracefully killing workers...
+worker 1 buried after 0 seconds
+Gracefully killing worker 4 (pid: 2918)...
+Gracefully killing worker 3 (pid: 2911)...
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/zhang/data/my_web_project/demo
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (192.168.37.129:8080)
+running /home/zhang/data/my_web_project/env/bin/uwsgi
+[uWSGI] getting INI configuration from demo.ini
+[uwsgi-static] added mapping for /static => /home/zhang/data/my_web_project/demo/allstatic
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Apr 19 05:16:32 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.13.0-38-generic #43~16.04.1-Ubuntu SMP Wed Mar 14 17:48:43 UTC 2018
+nodename: zhang-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 192.168.37.129:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2347420
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 6 seconds on interpreter 0x2347420 pid: 2907 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2907)
+spawned uWSGI worker 1 (pid: 9086, cores: 4)
+spawned uWSGI worker 2 (pid: 9087, cores: 4)
+spawned uWSGI worker 3 (pid: 9092, cores: 4)
+spawned uWSGI worker 4 (pid: 9095, cores: 4)
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Apr 20 12:10:11 2018] ***
+compiled with version: 5.4.0 20160609 on 18 April 2018 01:30:18
+os: Linux-4.13.0-38-generic #43~16.04.1-Ubuntu SMP Wed Mar 14 17:48:43 UTC 2018
+nodename: seven
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/zhang/data/my_web_project/demo
+detected binary path: /home/zhang/data/my_web_project/env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zhang/data/my_web_project/demo
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.37.129:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xd16ae0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 521120 bytes (508 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+added /home/zhang/data/my_web_project/env/lib/python3.5/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0xd16ae0 pid: 14524 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14524)
+spawned uWSGI worker 1 (pid: 14526, cores: 4)
+spawned uWSGI worker 2 (pid: 14527, cores: 4)
+spawned uWSGI worker 3 (pid: 14532, cores: 4)
+spawned uWSGI worker 4 (pid: 14535, cores: 4)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Not Found: /
+[pid: 14526|app: 0|req: 1/1] 192.168.37.129 () {42 vars in 741 bytes} [Fri Apr 20 04:10:32 2018] GET / => generated 2008 bytes in 687 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 3)
+Not Found: /app01/
+[pid: 14535|app: 0|req: 1/2] 192.168.37.129 () {42 vars in 753 bytes} [Fri Apr 20 04:10:38 2018] GET /app01/ => generated 2420 bytes in 138 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 2)
+[pid: 14535|app: 0|req: 2/3] 192.168.37.129 () {42 vars in 765 bytes} [Fri Apr 20 04:10:42 2018] GET /app01/login/ => generated 11486 bytes in 247 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 3)
+此次验证码是： 9477
+9477
+[pid: 14527|app: 0|req: 1/4] 192.168.37.129 () {42 vars in 744 bytes} [Fri Apr 20 04:10:42 2018] GET /app01/get_validCode_img/ => generated 1399 bytes in 1456 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 1)
+[pid: 14535|app: 0|req: 3/5] 192.168.37.129 () {42 vars in 791 bytes} [Fri Apr 20 04:10:48 2018] GET /admin/ => generated 2734 bytes in 425 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 1)
+[pid: 14527|app: 0|req: 2/6] 192.168.37.129 () {42 vars in 753 bytes} [Mon Apr 23 00:55:22 2018] GET /admin/ => generated 2734 bytes in 877 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 14535|app: 0|req: 4/7] 192.168.37.129 () {42 vars in 765 bytes} [Mon Apr 23 00:55:39 2018] GET /app01/login/ => generated 11486 bytes in 51 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+此次验证码是： 6301
+6301
+[pid: 14535|app: 0|req: 5/8] 192.168.37.129 () {42 vars in 744 bytes} [Mon Apr 23 00:55:39 2018] GET /app01/get_validCode_img/ => generated 1450 bytes in 865 msecs (HTTP/1.1 200) 4 headers in 233 bytes (1 switches on core 3)
+Not Found: /gen204
+[pid: 14527|app: 0|req: 3/9] 127.0.0.1 () {40 vars in 726 bytes} [Mon Apr 23 01:09:22 2018] GET /gen204?nca=te_li&client=te_lib&logld=vTE_20170911_00 => generated 2086 bytes in 72 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 3)
+Not Found: /gen204
+[pid: 14527|app: 0|req: 4/10] 127.0.0.1 () {40 vars in 852 bytes} [Mon Apr 23 01:09:22 2018] GET /gen204?sl=zh-CN&tl=en&textlen=47&sp=nmt&ttt=657&ttl=350&ttf=80&sr=1&nca=te_time&client=te_lib&logld=vTE_20170911_00 => generated 2181 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
